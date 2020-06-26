@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculater</title>
+</head>
+
+<body>
+    <div class="main">
+        <form action="">
+            <input id="result" class="result" type="text">
+        </form>
+        <table>
+            <tr>
+                <td><input style="background-color: #242529; color: red;" class="button" onclick="clearResult('0')" type="button" value="C"></td>
+                <td><input style="background-color: #242529;" class="button" type="button" value="<"></td>
+                <td><input style="background-color: #242529;" class="button" type="button" value="/"></td>
+                <td><input style="background-color: #242529;" class="button" onclick="getNumber('*')"type="button" value="X"></td>
+
+            </tr>
+            <tr>
+                <td><input class="button" onclick="getNumber('7')" type="button" value="7"></td>
+                <td><input class="button" onclick="getNumber('8')" type="button" value="8"></td>
+                <td><input class="button" onclick="getNumber('9')" type="button" value="9"></td>
+                <td><input style="background-color: #242529;" class="button" onclick="getNumber('-')" type="button" value="-"></td>
+
+            </tr>
+            <tr>
+                <td><input class="button" onclick="getNumber('4')" type="button" value="4"></td>
+                <td><input class="button" onclick="getNumber('5')" type="button" value="5"></td>
+                <td><input class="button" onclick="getNumber('6')" type="button" value="6"></td>
+                <td><input style="background-color: #242529;" class="button" onclick="getNumber('+')" type="button" value="+"></td>
+
+            </tr>
+            <tr>
+                <td><input class="button" onclick="getNumber('1')" type="button" value="1"></td>
+                <td><input class="button" onclick="getNumber('2')" type="button" value="2"></td>
+                <td><input class="button" onclick="getNumber('3')" type="button" value="3"></td>
+                <td rowspan="2"><input class="equal" onclick="getResult()" type="button" value="="></td>
+
+            </tr>
+            <tr>
+                <td colspan="2"><input class="zero" type="button" value="0"></td>
+                <td><input class="button" type="button" value="."></td>
+            </tr>
+        </table>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
